@@ -1,5 +1,6 @@
 import { Bot, Smartphone, Globe2, Cog, ShoppingBag, Palette, ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
+import ShinyText from "./ShinyText";
 
 const services = [
   {
@@ -56,18 +57,16 @@ export function Services() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <Reveal>
-            <div className="eyebrow gradient-text-static">WHAT WE DO</div>
-          </Reveal>
+<div className="eyebrow"><ShinyText text="WHAT WE DO" color="#a8a8a8" shineColor="#4ecca3" speed={3} /></div>          </Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-4 font-display text-4xl font-bold text-white sm:text-[52px]">
-              Our Core Services
-            </h2>
+<h2 className="mt-4 font-display text-4xl font-bold sm:text-[52px]">
+  <ShinyText text="Our Core Services" color="#ffffff" shineColor="#4ecca3" speed={3} />
+</h2>
           </Reveal>
           <Reveal delay={160}>
-            <p className="mx-auto mt-4 max-w-[600px] text-[18px] text-[color:var(--color-q-muted)]">
-              From AI-powered automation to pixel-perfect apps — we engineer solutions that give
-              your business a real competitive edge.
-            </p>
+<p className="mx-auto mt-4 max-w-[600px] text-[18px]">
+  <ShinyText text="From AI-powered automation to pixel-perfect apps — we engineer solutions that give your business a real competitive edge." color="#888888" shineColor="#4ecca3" speed={3} />
+</p>
           </Reveal>
         </div>
 
@@ -95,13 +94,12 @@ export function Services() {
                       / {s.n}
                     </span>
                   </div>
-
-                  <h3 className="relative mt-6 font-display text-[22px] font-bold text-white">
-                    {s.name}
-                  </h3>
-                  <p className="relative mt-2.5 text-[15px] leading-[1.7] text-[color:var(--color-q-muted)]">
-                    {s.desc}
-                  </p>
+<h3 className="relative mt-6 font-display text-[22px] font-bold">
+  <ShinyText text={s.name} color="#ffffff" shineColor="#4ecca3" speed={3} />
+</h3>
+<p className="relative mt-2.5 text-[15px] leading-[1.7]">
+  <ShinyText text={s.desc} color="#888888" shineColor="#4ecca3" speed={4} />
+</p>
 
                   <div className="relative mt-5 flex flex-wrap gap-2">
                     {s.tags.map((t) => (
@@ -119,13 +117,10 @@ export function Services() {
                     ))}
                   </div>
 
-                  <a
-                    href="#contact"
-                    className="premium-card-cta relative mt-7 inline-flex items-center gap-1.5 text-[13px] font-semibold text-white/80"
-                  >
-                    Learn more
-                    <ArrowUpRight size={14} className="premium-card-cta-arrow" />
-                  </a>
+<a href="#contact" className="premium-card-cta relative mt-7 inline-flex items-center gap-1.5 text-[13px] font-semibold">
+  <ShinyText text="Learn more" color="#cccccc" shineColor="#4ecca3" speed={3} />
+  <ArrowUpRight size={14} className="premium-card-cta-arrow" />
+</a>
                 </article>
               </Reveal>
             );

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Bot, Smartphone, Globe2, Cog, ShoppingBag, Palette } from "lucide-react";
 import { CountUp } from "./Reveal";
 import robotImg from "@/assets/hero-robot.png";
+import ShinyText from "./ShinyText";
 
 function MeshCanvas() {
   const ref = useRef<HTMLCanvasElement | null>(null);
@@ -182,42 +183,49 @@ export function Hero() {
             ✦ NOW ACCEPTING PROJECTS
           </div>
 
-          <h1 className="q-hero-title mt-8 font-display font-extrabold leading-[1.05] tracking-[-0.01em] text-white text-[clamp(3rem,9vw,88px)]">
-            WE BUILD
-          </h1>
-          <h1 className="q-hero-title font-display font-extrabold leading-[1.05] tracking-[-0.01em] gradient-text text-[clamp(3rem,9vw,88px)]">
-            DIGITAL FUTURES
-          </h1>
+      <h1 className="q-hero-title mt-8 font-display font-extrabold leading-[1.05] tracking-[-0.01em] text-[clamp(3rem,9vw,88px)]">
+  <ShinyText text="WE BUILD" color="#eff4f1" shineColor="#4ecca3" speed={4} />
+</h1>
+<h1 className="q-hero-title font-display font-extrabold leading-[1.05] tracking-[-0.01em] text-[clamp(3rem,9vw,88px)]">
+  <ShinyText text="DIGITAL FUTURES" color="#f5efef" shineColor="#4ecca3" speed={4} />
+</h1>
 
-          <p className="q-hero-sub mt-5 text-[18px] text-[color:var(--color-q-muted)]">
-            AI Agents · Mobile Apps · Websites · Automation
-          </p>
+
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
             <a href="#contact" className="btn-primary-q">Start a Project</a>
             <a href="#services" className="btn-ghost-q">Explore Services</a>
           </div>
-
-          <div className="mt-16 grid grid-cols-3 items-center gap-6 text-white sm:gap-12">
-            <div>
-              <div className="font-display text-4xl font-bold sm:text-5xl">
-                <CountUp end={120} />
-              </div>
-              <div className="mt-2 text-[13px] text-[color:var(--color-q-muted)]">Projects Done</div>
-            </div>
-            <div className="border-x border-white/10 px-6">
-              <div className="font-display text-4xl font-bold sm:text-5xl">
-                <CountUp end={85} />
-              </div>
-              <div className="mt-2 text-[13px] text-[color:var(--color-q-muted)]">Happy Clients</div>
-            </div>
-            <div>
-              <div className="font-display text-4xl font-bold sm:text-5xl">
-                <CountUp end={99} suffix="%" />
-              </div>
-              <div className="mt-2 text-[13px] text-[color:var(--color-q-muted)]">Satisfaction</div>
-            </div>
-          </div>
+          
+<p className="q-hero-sub mt-5 text-[18px]">
+  <ShinyText text="AI Agents · Mobile Apps · Websites · Automation" color="#ffffff" shineColor="#4ecca3" speed={3} />
+</p>
+         <div className="mt-16 grid grid-cols-3 items-center gap-6 sm:gap-12">
+  <div>
+    <div className="font-display text-4xl font-bold sm:text-5xl">
+      <ShinyText text="120" color="#ffffff" shineColor="#4ecca3" speed={3} />
+    </div>
+    <div className="mt-2 text-[13px]">
+      <ShinyText text="Projects Done" color="#888888" shineColor="#4ecca3" speed={3} />
+    </div>
+  </div>
+  <div className="border-x border-white/10 px-6">
+    <div className="font-display text-4xl font-bold sm:text-5xl">
+      <ShinyText text="85" color="#ffffff" shineColor="#4ecca3" speed={3} />
+    </div>
+    <div className="mt-2 text-[13px]">
+      <ShinyText text="Happy Clients" color="#888888" shineColor="#4ecca3" speed={3} />
+    </div>
+  </div>
+  <div>
+    <div className="font-display text-4xl font-bold sm:text-5xl">
+      <ShinyText text="99%" color="#ffffff" shineColor="#4ecca3" speed={3} />
+    </div>
+    <div className="mt-2 text-[13px]">
+      <ShinyText text="Satisfaction" color="#888888" shineColor="#4ecca3" speed={3} />
+    </div>
+  </div>
+</div>
 
           <div
             className="q-marquee relative mt-12 w-full overflow-hidden"

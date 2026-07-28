@@ -105,19 +105,7 @@ bun run start
 
 ## ☁️ Deployment
 
-### Option 1 — Publish via Lovable (easiest)
-
-Click **Publish** in the Lovable editor. Your site goes live at `https://<your-slug>.lovable.app`. A custom domain can be added from **Project Settings → Domains** after publishing.
-
-### Option 2 — Cloudflare Workers
-
-The build already targets Workers. After `bun run build`, deploy the generated `.output/` bundle with `wrangler`:
-
-```bash
-bunx wrangler deploy
-```
-
-### Option 3 — Any Node host (Vercel, Fly, Render, ...)
+### Any Node host (Vercel, Fly, Render, ...)
 
 TanStack Start's Nitro build supports multiple presets. Set the preset in `vite.config.ts` under `tanstackStart` if targeting a non-Cloudflare host, then follow that provider's deploy flow.
 

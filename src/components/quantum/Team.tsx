@@ -1,33 +1,13 @@
 import { Reveal } from "./Reveal";
+import ShinyText from "./ShinyText";
 
 const members = [
-  {
-    initials: "SZA",
-    name: "Syed Zayan Ahmed",
-    role: "Founder",
-    title: "Client Dealing",
-    gradient: "linear-gradient(135deg, #10B981, #2DD4A8)",
-  },
   {
     initials: "MA",
     name: "Muhammad Arif",
     role: "Co-Founder",
-    title: "Head AI Engineer",
-    gradient: "linear-gradient(135deg, #10B981, #EC4899)",
-  },
-  {
-    initials: "AS",
-    name: "Ali Sameer",
-    role: "Engineering",
-    title: "Full-Stack Lead",
-    gradient: "linear-gradient(135deg, #2DD4A8, #3B82F6)",
-  },
-  {
-    initials: "LK",
-    name: "Layla Kamal",
-    role: "Design",
-    title: "Product Designer",
-    gradient: "linear-gradient(135deg, #10B981, #F59E0B)",
+    title: "Co-Founder & CEO",
+    gradient: "linear-gradient(135deg, #10B981, #060204)",
   },
 ];
 
@@ -36,15 +16,15 @@ export function Team() {
     <section id="portfolio" className="relative py-[120px]">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <Reveal><div className="eyebrow gradient-text-static">ABOUT US</div></Reveal>
+          <Reveal><div className="eyebrow"><ShinyText text="ABOUT US" color="#a8a8a8" shineColor="#4ecca3" speed={3} /></div></Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-4 font-display text-4xl font-bold text-white sm:text-[52px]">
-              Our Team
+            <h2 className="mt-4 font-display text-4xl font-bold">
+              <ShinyText text="Our Team" color="#ffffff" shineColor="#4ecca3" speed={3} />
             </h2>
           </Reveal>
           <Reveal delay={160}>
-            <p className="mx-auto mt-4 max-w-[600px] text-[18px] text-[color:var(--color-q-muted)]">
-              The builders behind every project — passionate engineers, designers, and strategists.
+            <p className="mx-auto mt-4 max-w-[600px] text-[18px]">
+              <ShinyText text="The builders behind every project — passionate engineers, designers, and strategists." color="#ffffff" shineColor="#4ecca3" speed={3} />
             </p>
           </Reveal>
         </div>

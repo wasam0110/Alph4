@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import ShinyText from "./ShinyText";
 
 const steps = [
   { n: 1, title: "Discovery Call", desc: "Free 30-min consultation — deep-dive into goals, timeline, requirements." },
@@ -20,16 +21,15 @@ export function Process() {
       />
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <Reveal><div className="eyebrow gradient-text-static">HOW WE WORK</div></Reveal>
-          <Reveal delay={80}>
-            <h2 className="mt-4 font-display text-4xl font-bold text-white sm:text-[52px]">
-              From Idea to Launch
-            </h2>
+<Reveal><div className="eyebrow"><ShinyText text="HOW WE WORK" color="#a8a8a8" shineColor="#4ecca3" speed={3} /></div></Reveal>          <Reveal delay={80}>
+<h2 className="mt-4 font-display text-4xl font-bold sm:text-[52px]">
+  <ShinyText text="From Idea to Launch" color="#ffffff" shineColor="#4ecca3" speed={3} />
+</h2>
           </Reveal>
           <Reveal delay={160}>
-            <p className="mx-auto mt-4 max-w-[600px] text-[18px] text-[color:var(--color-q-muted)]">
-              A streamlined process that keeps you informed, on budget, and always moving forward.
-            </p>
+<p className="mx-auto mt-4 max-w-[600px] text-[18px]">
+  <ShinyText text="A streamlined process that keeps you informed, on budget, and always moving forward." color="#888888" shineColor="#4ecca3" speed={3} />
+</p>
           </Reveal>
         </div>
 

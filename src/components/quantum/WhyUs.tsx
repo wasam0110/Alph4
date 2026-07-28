@@ -1,6 +1,6 @@
 import { Zap, Sparkles, DollarSign, ShieldCheck, Globe2, Handshake } from "lucide-react";
 import { CountUp, Reveal } from "./Reveal";
-
+import ShinyText from "./ShinyText";
 const features = [
   { icon: Zap, title: "Lightning Fast Delivery", desc: "Most projects done in 5–14 days. Agile sprints, zero compromise on quality." },
   { icon: Sparkles, title: "AI-First Approach", desc: "We embed AI into every solution — smarter UIs, voice agents, intelligent automation." },
@@ -19,16 +19,16 @@ export function WhyUs() {
       />
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <Reveal><div className="eyebrow gradient-text-static">THE ADVANTAGE</div></Reveal>
+          <Reveal><div className="eyebrow"><ShinyText text="THE ADVANTAGE" color="#a8a8a8" shineColor="#4ecca3" speed={3} /></div></Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-4 font-display text-4xl font-bold text-white sm:text-[52px]">
-              The Alph4 Advantage
-            </h2>
+<h2 className="mt-4 font-display text-4xl font-bold sm:text-[52px]">
+  <ShinyText text="The Alph4 Advantage" color="#ffffff" shineColor="#4ecca3" speed={3} />
+</h2>
           </Reveal>
           <Reveal delay={160}>
-            <p className="mx-auto mt-4 max-w-[600px] text-[18px] text-[color:var(--color-q-muted)]">
-              We don't just build software — we engineer competitive advantages.
-            </p>
+<p className="mx-auto mt-4 max-w-[600px] text-[18px]">
+  <ShinyText text="We don't just build software — we engineer competitive advantages." color="#888888" shineColor="#4ecca3" speed={3} />
+</p>
           </Reveal>
         </div>
 
@@ -44,7 +44,9 @@ export function WhyUs() {
                   <div className="font-display text-5xl font-bold gradient-text-static sm:text-[56px]">
                     <CountUp end={s.end} suffix={s.suffix} decimals={s.decimals ?? 0} />
                   </div>
-                  <div className="mt-2 text-[14px] text-[color:var(--color-q-muted)]">{s.label}</div>
+                  <div className="mt-2 text-[14px] text-[color:var(--color-q-muted)]">
+                    <ShinyText text={s.label} color="#888888" shineColor="#4ecca3" speed={3} />
+                  </div>
                 </div>
                 {i < arr.length - 1 && (
                   <div
@@ -80,9 +82,11 @@ export function WhyUs() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="mt-4 font-display text-[17px] font-bold text-white">{f.title}</h3>
+                  <h3 className="mt-4 font-display text-[17px] font-bold">
+  <ShinyText text={f.title} color="#ffffff" shineColor="#4ecca3" speed={3} />
+</h3>
                   <p className="mt-2 text-[14px] leading-[1.7] text-[color:var(--color-q-muted)]">
-                    {f.desc}
+                    <ShinyText text={f.desc} color="#888888" shineColor="#4ecca3" speed={3} />
                   </p>
                 </article>
               </Reveal>

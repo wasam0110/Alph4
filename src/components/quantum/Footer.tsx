@@ -1,10 +1,9 @@
-import { Logo } from "./Logo";
-
+import ShinyText from "./ShinyText";
 const col = (title: string, items: string[]) => (
   <div>
-    <h4 className="font-display text-[14px] font-bold uppercase tracking-widest text-white">
-      {title}
-    </h4>
+<h4 className="font-display text-[14px] font-bold uppercase tracking-widest">
+  <ShinyText text={title} color="#ffffff" shineColor="#4ecca3" speed={3} />
+</h4>
     <ul className="mt-5 space-y-3">
       {items.map((i) => (
         <li key={i}>
@@ -29,13 +28,7 @@ export function Footer() {
         borderTop: "1px solid rgba(255,255,255,0.06)",
       }}
     >
-      <div className="mx-auto max-w-7xl px-6 pt-20 pb-10">
-        <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
-          <Logo />
-          <a href="#contact" className="btn-primary-q">Start a Project</a>
-        </div>
-
-        <div className="my-12 h-px w-full" style={{ background: "rgba(255,255,255,0.06)" }} />
+      <div className="mx-auto max-w-7xl px-6 py-16">
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           {col("Services", [
@@ -56,12 +49,12 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
-          <p className="text-[13px] text-[color:var(--color-q-muted)]">
-            © 2026 Alph4. All rights reserved.
-          </p>
-          <p className="text-[13px] text-[color:var(--color-q-muted)]">
-            Privacy Policy · Terms of Service
-          </p>
+<p className="text-[13px]">
+  <ShinyText text="© 2026 Alph4. All rights reserved." color="#888888" shineColor="#4ecca3" speed={3} />
+</p>
+<p className="text-[13px]">
+  <ShinyText text="Privacy Policy · Terms of Service" color="#888888" shineColor="#4ecca3" speed={3} />
+</p>
         </div>
       </div>
     </footer>

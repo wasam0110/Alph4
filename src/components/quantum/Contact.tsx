@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Mail, Instagram, MapPin, Calendar, CheckCircle2 } from "lucide-react";
 import { Reveal } from "./Reveal";
+import ShinyText from "./ShinyText";
 
 const SERVICES = [
   "AI Calling Agent",
@@ -77,10 +78,10 @@ export function Contact() {
       />
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <Reveal><div className="eyebrow gradient-text-static">GET IN TOUCH</div></Reveal>
+          <Reveal><div className="eyebrow"><ShinyText text="GET IN TOUCH" color="#a8a8a8" shineColor="#4ecca3" speed={3} /></div></Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-4 font-display text-4xl font-bold text-white sm:text-[52px]">
-              Let's Build Together
+            <h2 className="mt-4 font-display text-4xl font-bold">
+              <ShinyText text="Let's Build Together" color="#ffffff" shineColor="#4ecca3" speed={3} />
             </h2>
           </Reveal>
           <Reveal delay={160}>
