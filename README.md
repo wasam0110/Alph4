@@ -1,4 +1,39 @@
+# Alph4 — We Build Digital Futures
+
+A premium dark agency website for **Alph4**, a next-generation tech agency offering AI agents, mobile apps, web development, and automation.
+
+Built with **React 19**, **Vite 8**, **TypeScript**, and **Tailwind CSS v4**.
+
 ---
+
+## ✨ Features
+
+- Cinematic dark hero with animated particle mesh, parallax rings, and a floating robot
+- Fluid WebGL splash cursor effect
+- Dock-style navbar with magnification animation
+- Shiny text effects across all sections
+- Glassmorphism service cards with Lucide icons and hover motion
+- Auto-scrolling testimonials and marquee
+- Process, Team, Why Us, and Contact sections
+- Fully responsive and SEO-ready
+
+---
+
+## 🧰 Tech Stack
+
+| Layer      | Tech                                          |
+| ---------- | --------------------------------------------- |
+| Framework  | React 19                                      |
+| Bundler    | Vite 8                                        |
+| Styling    | Tailwind CSS v4 (`src/styles.css`)            |
+| Animation  | Motion (motion/react)                         |
+| Icons      | lucide-react · react-icons                    |
+| Fonts      | Syne · DM Sans · Fira Code (Google Fonts)     |
+| Language   | TypeScript (strict)                           |
+
+---
+
+## 📁 Project Structure
 
 ## 🚀 Getting Started
 
